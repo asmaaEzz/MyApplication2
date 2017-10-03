@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+
+    tools:context="com.example.android.myapplication.MainActivity">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:weightSum="1.0"
+        android:id="@+id/linear">
+    <Button
+        android:layout_marginLeft="5dp"
+
+        android:layout_height="wrap_content"
+        android:layout_weight=".33"
+        android:layout_width="0dip"
+        android:textSize="7dp"
+        android:id="@+id/btn1"
+        android:drawableLeft="@drawable/about"
+        android:background="@color/colorPrimary"
+        android:text="About"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_weight=".33"
+        android:layout_width="0dip"
+        android:id="@+id/btn3"
+
+        android:background="@color/colorPrimary"
+        android:text="Talks"
+        android:textSize="8dp"
+        android:drawableLeft="@mipmap/talks"
+        android:layout_toRightOf="@+id/btn1"/>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_weight=".33"
+        android:layout_width="0dip"
+        android:id="@+id/btn4"
+        android:background="@color/colorPrimary"
+        android:drawableLeft="@mipmap/contact"
+        android:text="Contact"
+        android:textSize="6dp"
+        android:layout_toRightOf="@+id/btn1"/>
+    </LinearLayout>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.android.myapplication.fragment1"
+        android:id="@+id/fragment_place"
+        >
+
+    </fragment>
+
+
+
+</LinearLayout>
